@@ -13,4 +13,46 @@
 
 body{
     background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+#container {
+width: 330px;
+}
+
+#sedans{
+    background-color: var(--bright-orange);
+}
+
+#suvs{
+    background-color: var(--dark-cyan);
+}
+
+#luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+#sedans h1,#suvs h1,#luxury h1{
+font-family: 'Big Shoulders Display', cursive;
+}
+
+#sedans p, #suvs p, #luxury p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+
+/* Extra small devices (phones, 350px and down) */
+@media only screen and (max-width: 350px) {...}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
