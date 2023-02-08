@@ -18,6 +18,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--very-light-gray);
     display: flex;
     justify-content: center;
@@ -25,23 +27,24 @@ body {
     height: 100vh;
 }
 
-button{
-background-color: var(--very-light-gray);
-border: none;
-padding: 15px 40px;
-border-radius: 30px;
-font-family: 'Lexend Deca', sans-serif;
-font-size: 1.1rem;
-mix-blend-mode: screen;
-font-weight: 700;
+button {
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    mix-blend-mode: screen;
+    font-weight: 700;
 }
 
-html{
+html {
     font-size: 15px;
+
 }
 
 #container {
-    width: 330px;
+    margin: 0 10px;
 }
 
 #sedans {
@@ -85,9 +88,74 @@ html{
 }
 
 
+
+@media only screen and (min-width: 351px) {
+    #container {
+        max-width: 70%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    
+    #container {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .attribution {
+        display: none;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    img {
+        height: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    button {
+        border-radius: 40px;
+        padding: 20px 50px;
+    }
+
     #container {
         display: flex;
+        justify-content: center;
+        max-width: 1000px;
+        height: auto;
+    }
+
+    #sedans {
+        border-radius: 10px 0 0 10px;
+        width: 33%;
+
+    }
+
+
+    #suvs {
+        width: 33%;
+    }
+
+    #luxury {
+        border-radius: 0 10px 10px 0;
+        width: 33%;
+    }
+
+    #sedans p,
+    #suvs p,
+    #luxury p {
+
+        margin-bottom: 90px;
     }
 }
