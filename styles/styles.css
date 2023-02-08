@@ -1,17 +1,23 @@
-:root{
---bright-orange: hsl(31, 77%, 52%);
---dark-cyan: hsl(184, 100%, 22%);
---very-dark-cyan: hsl(179, 100%, 13%);
-/* paragraphs */
---transparent-white: hsla(0, 0%, 100%, 0.75);
-/*background, headings, buttons*/
---very-light-gray: hsl(0, 0%, 95%);
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*background, headings, buttons*/
+    --very-light-gray: hsl(0, 0%, 95%);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 0.9rem;
+    text-align: center;
+}
 
-body{
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
     background-color: var(--very-light-gray);
     display: flex;
     justify-content: center;
@@ -19,40 +25,69 @@ body{
     height: 100vh;
 }
 
+button{
+background-color: var(--very-light-gray);
+border: none;
+padding: 15px 40px;
+border-radius: 30px;
+font-family: 'Lexend Deca', sans-serif;
+font-size: 1.1rem;
+mix-blend-mode: screen;
+font-weight: 700;
+}
+
+html{
+    font-size: 15px;
+}
+
 #container {
-width: 330px;
+    width: 330px;
 }
 
-#sedans{
+#sedans {
     background-color: var(--bright-orange);
+    margin: 0;
+    padding: 3rem;
+    border-radius: 10px 10px 0 0;
 }
 
-#suvs{
+#suvs {
     background-color: var(--dark-cyan);
+    margin: 0;
+    padding: 3rem;
 }
 
-#luxury{
+#luxury {
     background-color: var(--very-dark-cyan);
+    margin: 0;
+    padding: 3rem;
+    border-radius: 0 0 10px 10px;
 }
 
-#sedans h1,#suvs h1,#luxury h1{
-font-family: 'Big Shoulders Display', cursive;
+#sedans h1,
+#suvs h1,
+#luxury h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    margin: 0;
+    padding: 20px 0;
 }
 
-#sedans p, #suvs p, #luxury p {
+#sedans p,
+#suvs p,
+#luxury p {
     font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+    font-weight: 400;
+    line-height: 2rem;
 }
-
-
-
-
-/* Extra small devices (phones, 350px and down) */
-@media only screen and (max-width: 350px) {...}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 768px) {
+    #container {
+        display: flex;
+    }
+}
