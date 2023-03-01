@@ -91,8 +91,8 @@ html {
 @media only screen and (min-width: 351px) {
     #container {
         max-width: 70%;
-        height: auto;
-    }
+/*         height: auto;
+ */    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -102,8 +102,8 @@ html {
 
     #container {
         max-width: 60%;
-        height: auto;
-    }
+/*         height: auto;
+ */    }
 }
 
 
