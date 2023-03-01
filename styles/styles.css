@@ -18,13 +18,12 @@
 }
 
 body {
-   /*  margin: 0;
+    /*  margin: 0;
     padding: 0; */
     background-color: var(--very-light-gray);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 button {
@@ -100,7 +99,7 @@ html {
     html {
         font-size: 14px;
     }
-    
+
     #container {
         max-width: 60%;
         height: auto;
@@ -113,6 +112,10 @@ html {
 @media only screen and (min-width: 768px) {
     .attribution {
         display: none;
+    }
+
+    body {
+        height: 100vh;
     }
 
     html {
